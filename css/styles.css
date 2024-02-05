@@ -779,7 +779,8 @@ img {
     padding: 42px;
     border-radius: 48px;
 
-    background-color: var(--color-primary-darkblue);
+    /* background-color: var(--color-primary-darkblue); */
+    background: url(../images/modal-bg.png), var(--color-primary-darkblue);
     color: white;
 }
 
