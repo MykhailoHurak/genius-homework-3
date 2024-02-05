@@ -279,6 +279,7 @@ img {
 /* About --------------------------------- */
 
 .about {
+    /* position: relative; */
     padding-bottom: 176px;
     background: url(../images/about-bg.png);
     background-position: 0 650px;
@@ -287,9 +288,18 @@ img {
 }
 
 .about__box {
+    position: relative;
     display: flex;
     justify-content: space-between;
     gap: 32px;
+}
+
+.about__box::after {
+    position: absolute;
+    top: 270px;
+    right: 20px;
+    content: url(../images/about-star-3.png);
+    z-index: 1;
 }
 
 .about__text {
@@ -313,7 +323,28 @@ img {
 }
 
 .about__image {
+    /* position: relative; */
     max-width: 500px;
+}
+
+.about__image-box {
+    position: relative;
+}
+
+.about__image-box::before {
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    content: url(../images/about-star-2.png);
+    z-index: 1;
+}
+
+.about__image-box::after {
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    content: url(../images/about-star-1.png);
+    z-index: 1;
 }
 
 /* Advantages --------------------------------- */
@@ -521,8 +552,8 @@ img {
     width: 247px;
     height: 152px;
     position: absolute;
-    right: 24px;
-    bottom: -2px;
+    right: 0;
+    bottom: 0;
 }
 
 .footer__box {
